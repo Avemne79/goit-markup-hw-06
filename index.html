@@ -80,12 +80,37 @@
 
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <p></p>
               <button aria-label="Закрыть" class="close-button" data-modal-close>
                 <svg class="icon-close-modal">
                   <use href="./images/symbol-defs.svg#icon-close-modal"></use>
                 </svg>
               </button>
+
+              <!-- Форма ввода -->
+              <h2 class="input_header">Оставьте свои данные, мы вам перезвоним</h2>
+              <div class="input_form">
+                <form>
+                  <label>
+                    <p>Имя</p>
+                    <input type="text" name="username" />
+                  </label>
+                  <label>
+                    <p>Телефон</p>
+                    <input type="tel" name="phone_number" />
+                  </label>
+                  <label>
+                    <p>Почта</p>
+                    <input type="email" name="email" />
+                  </label>
+
+                  <label>
+                    <p>Комментарий</p>
+                    <textarea name="feedback" rows="5" placeholder="Введите текст..."></textarea>
+                  </label>
+
+                  <button type="submit">Submit</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
