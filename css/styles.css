@@ -915,6 +915,8 @@ label {
   align-items: baseline;
 }
 .subscr_header {
+  margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -925,4 +927,7 @@ label {
 }
 .subscr_form {
   align-items: baseline;
+}
+.subscr_btn {
+  background-color: var(--accent-color);
 }
