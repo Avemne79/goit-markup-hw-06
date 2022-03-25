@@ -91,24 +91,37 @@
               <div class="input_form">
                 <form>
                   <label>
-                    <p>Имя</p>
+                    <p class="input_text">Имя</p>
                     <input type="text" name="username" />
                   </label>
                   <label>
-                    <p>Телефон</p>
+                    <p class="input_text">Телефон</p>
                     <input type="tel" name="phone_number" />
                   </label>
                   <label>
-                    <p>Почта</p>
+                    <p class="input_text">Почта</p>
                     <input type="email" name="email" />
                   </label>
 
                   <label>
-                    <p>Комментарий</p>
-                    <textarea name="feedback" rows="5" placeholder="Введите текст..."></textarea>
+                    <p class="input_text">Комментарий</p>
+                    <textarea
+                      class="feed_text"
+                      name="feedback"
+                      rows="5"
+                      placeholder="Введите текст..."
+                    ></textarea>
                   </label>
-
-                  <button type="submit">Submit</button>
+                  <label>
+                    <input
+                      class="contract"
+                      type="checkbox"
+                      name="Договор"
+                      value="Условия договора"
+                    />
+                    <p class="contr_text">Соглашаюсь с рассылкой и принимаю Условия договора</p>
+                  </label>
+                  <button class="send_button" type="send">Отправить</button>
                 </form>
               </div>
             </div>
@@ -487,6 +500,20 @@
             </li>
           </ul>
         </div>
+
+        <!-- Блок подпишись
+
+        <div class="subscribe">
+          <h2 class="subscr_header">Подпишитесь на рассылку</h2>
+          <div>
+            <form class="subscr_form">
+              <label for="user_email">Email</label>
+              <input type="email" name="email" placeholder="E-mail" id="user_email" />
+
+              <button type="subscribe">Подписаться</button>
+            </form>
+          </div>
+        </div> -->
       </div>
     </footer>
     <!-- Подключен скрипт -->

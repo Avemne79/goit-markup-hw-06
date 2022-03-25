@@ -277,45 +277,6 @@ ul {
   background-color: var(--primary-color);
 }
 
-/* форма ввода */
-.input_header {
-  margin-top: 40px;
-  margin-bottom: 12px;
-
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--primary-text-color);
-}
-/*.input_form {
- position: absolute; */
-
-/* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-}*/
-
-input {
-  padding: 8px;
-  font-family: inherit;
-}
-
-input,
-textarea {
-  padding: 8px;
-  font-family: inherit;
-  font-size: inherit;
-}
-
-label {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 8px;
-}
-
 .close-button {
   position: absolute;
   border: 0;
@@ -343,6 +304,88 @@ label {
 .icon-close-modal:hover {
   fill: var(--accent-color);
   transform: rotate(360deg);
+}
+
+/* форма ввода */
+.input_header {
+  margin-top: 40px;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+/*.input_form {
+ position: absolute; */
+
+/* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}*/
+
+.send_button {
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  border: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+
+  color: var(--primary-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.input_text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-text-color);
+}
+
+.feed_text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.contract {
+  display: inline-block;
+}
+.contr_text {
+  padding: 0;
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
 }
 
 /* особенности */
@@ -864,4 +907,22 @@ label {
   width: 20px;
   height: 20px;
   fill: var(--primary-color);
+}
+/* блок подпишись */
+
+.subscribe {
+  margin-left: 93px;
+  align-items: baseline;
+}
+.subscr_header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-color);
+}
+.subscr_form {
+  align-items: baseline;
 }
