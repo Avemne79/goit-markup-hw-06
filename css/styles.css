@@ -958,11 +958,7 @@ label {
   height: 24px;
   background-image: url(../images/icon_send.svg);
 }
-.subscr_btn:hover::after {
-  fill: var(--primary-text-color);
-  background-color: var(--secondary-text-color);
-}
+
 .subscr_btn:hover {
-  color: var(--primary-text-color);
-  background-color: var(--primary-color);
+  color: var(--secondary-text-color);
 }
