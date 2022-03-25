@@ -66,6 +66,7 @@ ul {
 }
 .flex {
   display: flex;
+  align-items: baseline;
 }
 .navigation {
   display: flex;
@@ -866,10 +867,7 @@ label {
 /* блок соц-сети */
 
 .social-links {
-  display: flex;
-  display: block;
   margin-left: 70px;
-  align-items: baseline;
 }
 
 .join-header {
