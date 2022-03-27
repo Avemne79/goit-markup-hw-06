@@ -121,7 +121,34 @@
                     />
                     <p class="contr_text">Соглашаюсь с рассылкой и принимаю Условия договора</p>
                   </label>
-                  <button class="send_button" type="send">Отправить</button>
+
+                  <!-- черновик -->
+                  <div class="form-field">
+                    <label for="name" class="form-label">Имя</label>
+                    <input
+                      class="form-input"
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Иванов Иван"
+                      autofocus
+                    />
+                  </div>
+                  <div class="form-field">
+                    <label for="tel">Телефон</label>
+                    <input type="tel" name="tel" id="tel" />
+                  </div>
+                  <div class="form-field">
+                    <label for="mail">Почта</label>
+                    <input type="email" name="mail" id="mail" autocomplete="on" />
+                  </div>
+                  <div class="form-field">
+                    <input type="checkbox" name="policy" id="policy" />
+                    <label for="policy">Соглашаюсь с условиями договора</label>
+                  </div>
+                  <button type="submit">Оставить заявку</button>
+
+                  <button class="send_button" type="submit">Отправить</button>
                 </form>
               </div>
             </div>
@@ -504,15 +531,14 @@
         <!-- Блок подпишись -->
 
         <div class="subscribe">
-          <h2 class="subscr_header">Подпишитесь на рассылку</h2>
-          <div>
-            <form class="subscr_form">
-              <label for="user_email"></label>
-              <input type="email" name="email" placeholder="E-mail" id="user_email" />
+          <h2 class="subscr-header">Подпишитесь на рассылку</h2>
 
-              <button class="subscr_btn" type="subscribe">Подписаться</button>
-            </form>
-          </div>
+          <form class="subscr-form">
+            <label for="user-email"></label>
+            <input type="email" name="email" placeholder="E-mail" id="user-email" />
+
+            <button class="subscr-btn" type="submit">Подписаться</button>
+          </form>
         </div>
       </div>
     </footer>
