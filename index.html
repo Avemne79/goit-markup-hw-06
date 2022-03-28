@@ -87,68 +87,42 @@
               </button>
 
               <!-- Форма ввода -->
-              <h2 class="input_header">Оставьте свои данные, мы вам перезвоним</h2>
-              <div class="input_form">
-                <form>
-                  <label>
-                    <p class="input_text">Имя</p>
-                    <input type="text" name="username" />
-                  </label>
-                  <label>
-                    <p class="input_text">Телефон</p>
-                    <input type="tel" name="phone_number" />
-                  </label>
-                  <label>
-                    <p class="input_text">Почта</p>
-                    <input type="email" name="email" />
-                  </label>
-
-                  <label>
-                    <p class="input_text">Комментарий</p>
-                    <textarea
-                      class="feed_text"
-                      name="feedback"
-                      rows="5"
-                      placeholder="Введите текст..."
-                    ></textarea>
-                  </label>
-                  <label>
-                    <input
-                      class="contract"
-                      type="checkbox"
-                      name="Договор"
-                      value="Условия договора"
-                    />
-                    <p class="contr_text">Соглашаюсь с рассылкой и принимаю Условия договора</p>
-                  </label>
-
-                  <!-- черновик -->
+              <h2 class="input-header">Оставьте свои данные, мы вам перезвоним</h2>
+              <div class="input-form">
+                <form class="form">
                   <div class="form-field">
                     <label for="name" class="form-label">Имя</label>
-                    <input
-                      class="form-input"
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Иванов Иван"
-                      autofocus
-                    />
+                    <input class="form-input" type="text" name="name" id="name" autofocus />
                   </div>
+
                   <div class="form-field">
                     <label for="tel">Телефон</label>
                     <input type="tel" name="tel" id="tel" />
                   </div>
+
                   <div class="form-field">
                     <label for="mail">Почта</label>
                     <input type="email" name="mail" id="mail" autocomplete="on" />
                   </div>
-                  <div class="form-field">
-                    <input type="checkbox" name="policy" id="policy" />
-                    <label for="policy">Соглашаюсь с условиями договора</label>
-                  </div>
-                  <button type="submit">Оставить заявку</button>
 
-                  <button class="send_button" type="submit">Отправить</button>
+                  <div class="form-field">
+                    <label for="comment">Комментарий</label>
+                    <textarea
+                      class="comment"
+                      name="comment"
+                      id="comment"
+                      rows="8"
+                      placeholder="Текст"
+                    >
+Введите текст</textarea
+                    >
+                  </div>
+                  <div class="policy">
+                    <input type="checkbox" name="policy" id="policy" />
+                    <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                  </div>
+
+                  <button class="send-button" type="submit">Отправить</button>
                 </form>
               </div>
             </div>
