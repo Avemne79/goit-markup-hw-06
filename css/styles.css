@@ -309,18 +309,11 @@ ul {
 
 /* форма ввода */
 
-/* черновик 
-
-.form-field input {
-  margin: 0;
-  padding: 6px 10px;
-  border-radius: 4px;
-  border-color: var(--accent-colora);
-}*/
-
 /* чистовик */
 
 textarea {
+  height: 120px;
+  padding: 12px 16px;
   resize: none;
 }
 
@@ -336,19 +329,11 @@ textarea {
   color: var(--primary-text-color);
 }
 
-.input-form {
-  outline: 5px solid blue;
-}
-
 .form {
-  outline: 1px solid red;
-  width: 528px;
-
   padding: 0 40px;
 }
 
 .form-field {
-  outline: 1px solid orange;
   display: flex;
   flex-direction: column;
 
@@ -368,19 +353,17 @@ textarea {
   color: var(--secondary-text-color);
 }
 
-.comment {
-  padding: 12px 16px;
+.form-field textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  line-height: 1.7;
+
+  letter-spacing: 0.03em;
 
   color: rgba(117, 117, 117, 0.5);
 }
 
 .policy {
-  width: 425px;
-  height: 24px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -388,11 +371,8 @@ textarea {
 .policy label {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
-
-  letter-spacing: 0.03em;
-
-  color: var(--secondary-text-color);
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 }
 
 .send-button {
@@ -419,22 +399,6 @@ textarea {
 
 .send-button:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.contract {
-  display: inline-block;
-}
-.contr_text {
-  padding: 0;
-  margin: 0;
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-
-  letter-spacing: 0.03em;
-
-  color: var(--secondary-text-color);
 }
 
 /* особенности */
