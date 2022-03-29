@@ -310,7 +310,7 @@ ul {
 /* форма ввода */
 /* Чекбоксы */
 
-/* утилита */
+/* утилита 
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -320,23 +320,19 @@ ul {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-.option {
+}*/
+/*.option {
   display: block;
-  margin-bottom: 0.25em;
 }
 .check {
   padding-left: 1.2em;
-}
+} */
 .check_input {
   position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
-  /* -webkit-appearance: none;
-  -moz--webkit-appearance: none;
-  appearance: none; */
 }
 .check_box {
   position: absolute;
@@ -346,13 +342,27 @@ ul {
   height: 0.7em;
   border-radius: 0.05em;
   background-color: #ffffff;
-  box-shadow: 0 0 0 0.1em #2196f3;
+  box-shadow: 0 0 0 0.1em #9b9b9b;
 }
 /* Checked */
 .check_input:checked + .check_box {
-  background-color: #2196f3;
+  box-shadow: 0 0 0 0.1em #2196f3;
   background-image: url(/images/Vector2.svg);
 }
+
+/* Focused 
+.check_input:focus + .check_box {
+  box-shadow: 0 0 0 0.1em #2196f3, 0 0 0 0.2em greenyellow;
+}*/
+
+/* Disabled 
+.check_input + .check_box {
+  box-shadow: 0 0 0 0.1em #9b9b9b;
+}
+
+.check_input:checked:disabled + .check_box {
+  background-color: #9b9b9b;
+}*/
 
 /* чистовик */
 
