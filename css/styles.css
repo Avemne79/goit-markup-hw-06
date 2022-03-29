@@ -300,7 +300,7 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  fill: var(--primary-color);
+  fill: var(--primary-text-color);
 
   transform: rotate(0deg);
 
@@ -381,7 +381,20 @@ textarea {
 }
 
 .input-form {
+  position: relative;
   width: 100%;
+}
+
+.input-form svg {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 12px;
+  width: 18px;
+  height: 18px;
+}
+
+.input-form svg:hover {
+  fill: var(--accent-color);
 }
 
 .input-header {
