@@ -285,8 +285,9 @@ ul {
 
 .close-button {
   position: absolute;
+  padding: 0;
   border: 0;
-  padding: 8px 8px 0 0;
+  margin: 8px 8px 0 0;
   right: 0;
   border-radius: 50%;
 
@@ -294,6 +295,7 @@ ul {
 }
 
 .icon-close-modal {
+  padding: 5px;
   width: 30px;
   height: 30px;
 
