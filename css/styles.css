@@ -289,7 +289,7 @@ ul {
   padding: 0;
   border: 0;
   margin: 8px 8px 0 0;
- 
+
   border-radius: 50%;
 
   background-color: var(--primary-color);
@@ -316,55 +316,6 @@ ul {
 }
 
 /* форма ввода */
-/* Чекбоксы */
-
-/* утилита 
-.check_input {
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-border: 0;
-padding: 0;
-
-clip: rect(0 0 0 0);
-overflow: hidden;
-} */
-
-.checkbox-icon {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
-  border: 2px solid var(--primary-text-color);
-  border-radius: 2px;
-}
-
-/* Checked */
-
-.check_input:checked + .checkbox-icon {
-  background-color: var(--accent-color);
-  border-color: transparent;
-  background-image: url(../images/icon-check-1.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-origin: border-box;
-}
-
-
-/* Focused 
-.check_input:focus + .check_box {
-  box-shadow: 0 0 0 0.1em #2196f3, 0 0 0 0.2em greenyellow;
-}*/
-
-/* Disabled 
-.check_input + .check_box {
-  box-shadow: 0 0 0 0.1em #9b9b9b;
-}
-
-.check_input:checked:disabled + .check_box {
-  background-color: #9b9b9b;
-}*/
 
 /* чистовик */
 
@@ -382,29 +333,35 @@ textarea {
   width: 100%;
 }
 
-.form-input{height: 40px;
-padding-left: 42px;
-border: 1px solid;
-border-color: rgba(33, 33, 33, 0.2);
-border-radius: 4px;
-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.form-input {
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid;
+  border-color: rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:hover {
   border-color: var(--accent-color);
 }
 
-.form-input:hover + svg {fill: var(--accent-color);}
+.form-input:hover ~ .input-icon {
+  fill: var(--accent-color);
+}
 
-.input-icon:hover, .input-icon:focus{fill: var(--accent-color);}
+.form-input:focus ~ .input-icon {
+  fill: var(--accent-color);
+}
 
 .input-icon {
-position: absolute;
-margin-top: 30px;
-margin-left: 12px;
-width: 18px;
-height: 18px;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 12px;
+  width: 18px;
+  height: 18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .input-header {
   margin-top: 40px;
@@ -442,14 +399,6 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
   color: var(--secondary-text-color);
 }
 
-/*.form-field input {
-  height: 40px;
-  padding: 0;
-  border: 1px solid;
-  border-color: rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}*/
-
 .form-field textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -460,18 +409,68 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
   color: rgba(117, 117, 117, 0.5);
 }
 
+/* Чекбоксы */
+
+/* утилита */
+.check_input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+}
+
+.check_input:focus ~ .checkbox-icon {
+  border: 2px solid var(--accent-color);
+}
+
+/* Checked */
+
+.check_input:checked + .checkbox-icon {
+  background-color: var(--accent-color);
+  border-color: transparent;
+  background-image: url(../images/icon-check-1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
 .policy {
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
-.policy label {
+.policy-label {
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
+}
+
+.policy-option {
+  margin-left: 3px;
+  text-decoration: none;
+  border-bottom: 1px solid #2196f3;
+  color: var(--accent-color);
 }
 
 .send-button {
