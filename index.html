@@ -93,23 +93,29 @@
                   <div class="form-field">
                     <label for="name" class="form-label">Имя</label>
                     <input class="form-input" type="text" name="name" id="name" autofocus />
-                    <svg>
+                    <svg class="input-icon">
                       <use href="./images/symbol-defs.svg#icon-person-black-18dp"></use>
                     </svg>
                   </div>
 
                   <div class="form-field">
                     <label for="tel">Телефон</label>
-                    <input type="tel" name="tel" id="tel" />
-                    <svg>
+                    <input class="form-input" type="tel" name="tel" id="tel" />
+                    <svg class="input-icon">
                       <use href="./images/symbol-defs.svg#icon-phone-black-18dp"></use>
                     </svg>
                   </div>
 
                   <div class="form-field">
                     <label for="mail">Почта</label>
-                    <input type="email" name="mail" id="mail" autocomplete="on" />
-                    <svg>
+                    <input
+                      class="form-input"
+                      type="email"
+                      name="mail"
+                      id="mail"
+                      autocomplete="on"
+                    />
+                    <svg class="input-icon">
                       <use href="./images/symbol-defs.svg#icon-email-black-18dp"></use>
                     </svg>
                   </div>
@@ -134,10 +140,12 @@
                   <!-- Соглашение -->
 
                   <div class="policy">
-                    <input class="check_input" type="checkbox" name="policy" id="policy" /><span
-                      class="check_box"
-                    ></span>
-                    <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                    <input class="check_input" type="checkbox" name="policy" id="policy" />
+                    <span class="checkbox-icon"></span>
+                    <label for="policy"
+                      >Соглашаюсь с рассылкой и принимаю
+                      <a class="opsh" href="">Условия договора</a></label
+                    >
                   </div>
 
                   <button class="send-button" type="submit">Отправить</button>
