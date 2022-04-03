@@ -256,6 +256,7 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 10;
 
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -308,6 +309,8 @@ ul {
   transform: rotate(0deg);
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  cursor: pointer;
 }
 
 .icon-close-modal:hover {
@@ -323,9 +326,15 @@ textarea {
   height: 120px;
   padding: 12px 16px;
   resize: none;
+  outline: none;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+.input-form textarea:focus,
+.input-form textarea:hover {
+  border: 1px solid var(--accent-color);
 }
 
 .input-form {
@@ -340,16 +349,15 @@ textarea {
   border-color: rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
-.form-input:hover {
+.form-input:hover,
+.form-input:focus {
   border-color: var(--accent-color);
 }
 
-.form-input:hover ~ .input-icon {
-  fill: var(--accent-color);
-}
-
+.form-input:hover ~ .input-icon,
 .form-input:focus ~ .input-icon {
   fill: var(--accent-color);
 }
@@ -361,6 +369,16 @@ textarea {
   width: 18px;
   height: 18px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-icon:hover,
+.input-icon:focus {
+  fill: var(--accent-color);
+}
+
+.input-icon:hover ~ .form-input,
+.input-icon:focus ~ .form-input {
+  border-color: var(--accent-color);
 }
 
 .input-header {
@@ -437,6 +455,10 @@ textarea {
   border: 2px solid var(--accent-color);
 }
 
+.checkbox-icon:hover {
+  border: 2px solid var(--accent-color);
+}
+
 /* Checked */
 
 .check_input:checked + .checkbox-icon {
@@ -456,7 +478,6 @@ textarea {
 .policy-label {
   display: flex;
   align-items: center;
-  border: 1px solid red;
 
   font-weight: 400;
   font-size: 14px;
